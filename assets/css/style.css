@@ -71,7 +71,7 @@ body{
 }
 .containeraluno-img{
 	width: 70rem;
-	height: 21rem;
+	height: 15rem;
 }
 .containeraluno-text{
 	display: flex;
@@ -132,4 +132,39 @@ body{
 .img-categoria{
 	width: 28rem;
 	height: 25rem;
+}
+
+@media (max-width: 360px){
+	.containeraluno{
+	}
+	.containeraluno-text{
+		flex-direction: column;
+	}
+	.container-aluno-text-name{
+		font-size:1.5rem;
+	}
+	.containeraluno-text-description{
+		font-size: 1.2rem;
+	}
+	.containeraluno-img{
+		width: 10rem;
+		height: 10rem;
+		justify-content: center;
+	}
+	.projeto{
+		grid-template-columns: 100%;
+  		grid-template-rows: 40rem;
+  		width: 80%;
+  		height: 50%;
+  		margin: 2rem;
+  		font-size: 1.5rem;
+
+	}
+	.items{
+		font-size: 1.5rem;
+	}
+	.titulo{
+		font-size: 2rem;
+
+	}
 }
