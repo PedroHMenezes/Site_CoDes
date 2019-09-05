@@ -1,9 +1,14 @@
+body{
+	background-color: #EDF4ED;
+}
 .header{
 	margin-bottom:1rem;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	background-color: red;
+	background-color: #301014;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
 }
 .cabecalho{
 	display: flex;
@@ -16,6 +21,8 @@
 	flex-direction: column;
 	max-width: 90%;
 	margin: 1rem;
+	font-family: 'EB Garamond', serif;
+	font-size: 1.2rem;
 }
 .containeraluno-img{
 	margin: 1rem;
@@ -28,6 +35,9 @@
 	max-width: 90%;
 	margin: 1rem;
 	align-items: center;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 .pic{
@@ -37,6 +47,14 @@
 }
 .titulo{
 	margin-top: 1rem;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+
+}
+.titulo-items{
 }
 .projeto-centrado-items{
 	margin-top: 1rem;
@@ -45,5 +63,33 @@
 @media(max-width: 360px){
 	.header{
 		font-size: 0rem;
+	}
+}
+
+@media(min-width: 361px){
+	.containeraluno{
+		margin-top: 5rem;  
+		width: 50%;
+		margin-left: 25%;
+		max-width: 50%;
+		display: flex;
+		align-items: stretch;
+		flex-direction: row;
+	}
+	.containeraluno-img{
+		width: 20rem;
+		height: 15rem;
+	}
+	.containeraluno-text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.container-aluno-text-name{
+		position: relative;
+		margin-top: 2rem;
+	}
+	.titulo{
+		flex-direction: column;
 	}
 }
