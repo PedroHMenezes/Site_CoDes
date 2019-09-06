@@ -57,9 +57,6 @@ body{
 
 }
 .titulo_item{
-	margin-left: 50%;
-	margin-right: 50%;
-	font-size: 2rem;
 }
 .projeto-centrado-items{
 	margin-top: 1rem;
@@ -96,6 +93,8 @@ body{
 	}
 	.titulo{
 		flex-direction: column;
+		margin-left: 50%;
+		font-size: 2rem;
 	}
 	.fonte_cabecalho{
 		display: inline;
@@ -103,5 +102,14 @@ body{
 		margin-right: 2rem;
 		margin-left: 2rem;
 		margin-top: 0.3rem;
+	}
+	.projeto{
+		display: grid;
+	    grid-template-columns: 50% 50%;
+	    grid-template-rows: 40rem;
+	    width: 80%;
+	    height: 50%;
+	    margin: 5rem 10%;
+	    justify-content: flex-start;
 	}
 }
