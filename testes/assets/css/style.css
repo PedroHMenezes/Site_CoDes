@@ -47,11 +47,14 @@ body{
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
+	justify-content: center;
+	align-items:center;
 }
 
 .pic{
 	max-width: 100%;
-	margin-top: 1rem;
+	margin: 3rem 0rem 0.5rem 0rem;
+	/*align-self: center;*/ 
 }
 
 .titulo{
@@ -60,11 +63,13 @@ body{
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	display: flex;
+	text-align: center;
 }
 
 .items{
-	align-content: center;
+	/*align-self: stretch*/
+	justify-self: center;
+
 }
 
 .projeto-centrado-items{
@@ -93,7 +98,9 @@ body{
 	}
 
 	.titulo{
-
+		text-align: center;
+		margin-top: 10rem;
+		margin-bottom: 4rem;
 		font-size: 2rem;
 	}
 	.fonte_cabecalho{
@@ -106,10 +113,10 @@ body{
 	.projeto{
 		display: grid;
 	    grid-template-columns: 50% 50%;
-	    grid-template-rows: 40rem;
-	    width: 80%;
-	    height: 50%;
-	    margin: 5rem 10%;
+	    /*grid-template-rows: 40rem;*/
+	    /*width: 80%;
+	    height: 50%;*/
+	    /*margin-top: 2rem;*/
 	    justify-content: flex-start;
 	}
 
