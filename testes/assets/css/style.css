@@ -10,54 +10,63 @@ body{
 	font-size: 1.5rem;
 	font-family: 'Montserrat', sans-serif;
 }
-.cabecalho{
-	display: flex;
-	margin-top: 1rem; 
-}
 
 .containeraluno{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	max-width: 90%;
-	margin: 1rem;
+	margin: 1rem 1rem 3rem 1rem;
 	font-family: 'EB Garamond', serif;
 	font-size: 1.2rem;
 }
 .containeraluno-img{
 	margin: 1rem;
-	max-height: 20rem;
-	max-height: 20rem;
+	max-width: 300px;
+	max-height: 300px;
 }
+
+.containeraluno-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin:0rem 1rem;
+}
+
+.container-aluno-text-name{
+	position: relative;
+	margin-bottom: 1rem;
+}
+
 .projeto{
 	display: flex;
 	flex-direction: column;
-	max-width: 90%;
+	max-width: 100%;
 	margin: 1rem;
-	align-items: center;
+	align-content: center;
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 }
 
 .pic{
-	height: 20%;
-	width: 90%;
+	max-width: 100%;
 	margin-top: 1rem;
 }
+
 .titulo{
-	width: 100%;
 	height: 1rem;
-	margin-top: 1rem;
+	margin: 1rem;
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	display: flex;
-	justify-content: space-between;
+}
 
+.items{
+	align-content: center;
 }
-.titulo_item{
-}
+
 .projeto-centrado-items{
 	margin-top: 1rem;
 }
@@ -79,21 +88,12 @@ body{
 		flex-direction: row;
 	}
 	.containeraluno-img{
-		width: 20rem;
-		height: 15rem;
+		width: 100%;
+		height: 100%;
 	}
-	.containeraluno-text{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.container-aluno-text-name{
-		position: relative;
-		margin-top: 2rem;
-	}
+
 	.titulo{
-		flex-direction: column;
-		margin-left: 50%;
+
 		font-size: 2rem;
 	}
 	.fonte_cabecalho{
@@ -112,4 +112,12 @@ body{
 	    margin: 5rem 10%;
 	    justify-content: flex-start;
 	}
+
+	.cabecalho{
+		width: 70%;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 1rem; 
+	}
+
 }
