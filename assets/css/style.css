@@ -1,165 +1,184 @@
 body{
-   min-width:70rem;        /* Suppose you want minimum width of 1000px */
-   width: auto !important;  /* Firefox will set width as auto */
-   width:70rem; /* As IE6 ignores !important it will set width as 1000px; E6EFE9*/
-   background-color: #EDF4ED;    
+	background-color: #EDF4ED;
 }
+.header{
+	margin-bottom:1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: #301014;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.logo, .perfil{
+	width: 60px;
+	height: 60px;
+}
+
+.containeraluno{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 90%;
+	margin: 3rem 1rem 4rem 1rem;
+	font-family: 'EB Garamond', serif;
+	font-size: 1.2rem;
+}
+.containeraluno-img{
+	margin: 1rem;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.containeraluno-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin:1rem 1rem;
+}
+
+}
+.containeraluno-text-description{
+	font-family: 'EB Garamond', serif;
+}
+
+.container-aluno-text-name{
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.projeto{
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	margin: 1rem;
+	align-content: center;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	justify-content: center;
+	align-items:center;
+}
+
+.pic, .pic1{
+	max-width: 100%;
+	margin: 0rem 0rem 0.5rem 0rem;
+	/*align-self: center;*/ 
+}
+
+.titulo{
+	height: 1rem;
+	margin: 1rem;
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.items{
+	/*align-self: stretch*/
+	justify-self: center;
+	margin: 1rem;
+}
+
 .projeto-centrado{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 5rem;
 }
+
 .projeto-centrado-items{
 	margin-top: 2rem;
-	font-size: 1.5rem;
-	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 0.5rem;
 	font-weight: bold;
 }
 
-.header {
-	max-width: 100%;
-	margin-bottom: 0.5rem;
-	font-size: 1.5rem;
-	font-family: 'Montserrat', sans-serif; 
-	padding: 0.5rem;
-	border-style:none;
-	border-width: 0.01rem;
-	display: flex;
-	justify-content: space-between;
-	background-color: #301014;
-}
-
-.logo{
-	width: 4rem;
-	height: 4rem;
-	margin:0.5rem;
-}
-
-.cabecalho{
-	display: flex;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-}
-
-.perfil{
-	width: 4rem;
-	height: 4rem;
-	margin: 0.5rem;
-}
-
-.fonte_cabecalho{
-	display: inline;
-	align-items: center;
-	margin-left: 5rem;
-	margin-right: 5rem;
+.projeto-centrado-title{
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
-}
-
-.containeraluno{
-  margin-top: 5rem;
-  width: 50%;
-  margin-left: 25%;
-  max-width: 50%;
-  display: flex;
-}
-.containeraluno-img{
-	width: 70rem;
-	height: 15rem;
-}
-.containeraluno-text{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-left: 2rem;
-}
-.container-aluno-text-name{
-	position: relative;
-	margin-top: 2rem;
-	font-size: 1.5rem;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-}
-.containeraluno-text-description{
-	margin-right: 1rem;
-	margin-top: 0.5rem;
-	font-family: 'EB Garamond', serif;
-	font-size: 1.2rem;
+	font-size: 2rem;
 }
 
-.titulo{
-	font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-	margin-top: 10%;
-  	text-align: center;
+
+@media(max-width: 360px){
+	.header{
+		font-size: 0rem;
+	}
 }
 
-.projeto{
-  background-color: white;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 40rem;
-  width: 80%;
-  height: 50%;
-  margin: 5rem 10%;
-  justify-content: flex-start;
-  background-color: #EDF4ED;
-}
+@media(min-width: 361px){
+	.logo, .perfil{
+		width: 80px;
+		height: 80px;
+	}
 
-.pic{
-	width: 25rem;
-	height: 25rem;
-}
-
-.items{
-  justify-self: center;
-  align-self: stretch;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-}
-
-.geral{
-	min-width: 100rem;
-}
-
-.img-categoria{
-	width: 28rem;
-	height: 25rem;
-}
-
-@media (max-width: 360px){
 	.containeraluno{
-	}
-	.containeraluno-text{
-		flex-direction: column;
-	}
-	.container-aluno-text-name{
-		font-size:1.5rem;
-	}
-	.containeraluno-text-description{
-		font-size: 1.2rem;
+		margin-top: 5rem; 
+		margin-left: 20%;
+		margin-right: 20%;
+		display: flex;
+		align-items: stretch;
+		font-size: 1.5rem;
+		flex-direction: row;
 	}
 	.containeraluno-img{
-		width: 10rem;
-		height: 10rem;
-		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.titulo{
+		text-align: center;
+		margin-top: 10rem;
+		margin-bottom: 4rem;
+		font-size: 2rem;
+	}
+	.fonte_cabecalho{
+		display: inline;
+		align-items: center;
+		margin-right: 2rem;
+		margin-left: 2rem;
+		margin-top: 0.3rem;
 	}
 	.projeto{
-		grid-template-columns: 100%;
-  		grid-template-rows: 40rem;
-  		width: 80%;
-  		height: 50%;
-  		margin: 2rem;
-  		font-size: 1.5rem;
-
+		display: grid;
+	    grid-template-columns: 40% 40%;
+	    /*grid-template-rows: 40rem;*/
+	    /*width: 80%;
+	    height: 50%;*/
+	    /*margin-top: 2rem;*/
+	    /*justify-content: space-around;*/
 	}
-	.items{
+
+	.cabecalho{
+		width: 70%;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 1rem; 
+	}
+
+	.pic{
+		max-width: 100%;
+		margin: 3rem 0rem 0.5rem 0rem;
+		width: 25rem;
+		height: 25rem;
+	/*align-self: center;*/ 
+	}
+
+	.projeto-centrado{
 		font-size: 1.5rem;
 	}
-	.titulo{
-		font-size: 2rem;
 
+	.containeraluno-text-description{
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	}
+	.pic1{
+		width: 25rem;
+		height: 20rem;
 	}
 }
