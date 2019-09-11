@@ -103,13 +103,13 @@ body{
 }
 
 
-@media(max-width: 360px){
+@media(max-width: 34rem){
 	.header{
 		font-size: 0rem;
 	}
 }
 
-@media(min-width: 361px){
+@media(min-width: 34rem){
 	.logo, .perfil{
 		width: 80px;
 		height: 80px;
