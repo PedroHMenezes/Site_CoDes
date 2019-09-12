@@ -5,7 +5,8 @@
   foi explicado no Material Prévio de JavaScript da Aula 9.
 */
 document.addEventListener('DOMContentLoaded', function() {
-
+  let params = coDesExtract()
+  let value = params['key']
   /*
     A função coDesConnect cria uma conexão com o Firebase.
   */
@@ -24,20 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
     É NECESSÁRIO E PODE CAUSAR PROBLEMAS DE SINCRONIZAÇÃO.
   */
   db.download('/', function(data) {
+    coDesReplace('.projeto', data)
 
-    /*
-      Sim, abaixo estamos usando "in" em vez de "of", pois
-      "of" você usa para iterar em listas. Para iterar nas
-      chaves de um dicionário, usamos "in", como em Python.
-      Sim, é confuso. Sinto muito.
-    */
-    for(let key in data) {
-
-      /*
-        O resultado deste loop pode ser visto no console.
-      */
-      console.log(data[key])
-    }
+    console.log(value)
   /*
     Uma query string é um dicionário armazenado no próprio
     endereço da página. O início dela é marcado por um "?"
@@ -45,14 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
     forma "chave=valor", separados por "&". Isso acabou de
     ser explicado nos slides.
 
-    A função coDesExtract extrai a query string da página
-    atual e a transforma em um dicionário JavaScript comum.
-  */
-  let params = coDesExtract()
+    A função coDesReplace recebe dois parâmetros. O primeiro
+    é um seletor para localizar algum elemento da página. No
+    exemplo abaixo, usamos ".main" para localizar o elemento
+    cuja classe é "main". Não esqueça que é como no CSS: os
+    nomes de classes devem começar com ponto.
 
-  /*
-    O resultado da linha abaixo pode ser visto no console.
+    O segundo é um dicionário cujas chaves são palavras que
+    estão entre {{ e }} nesse elemento e cujos valores são os
+    textos que devem substituir essas ocorrências de {{}}.
   */
-  console.log(params)
+    context = data['portfolio'][value]
+    coDesReplace('title',context)
+
+    context = data['portfolio'][value]
+    coDesReplace('.container-aluno-text-name', context)
   })
 })
