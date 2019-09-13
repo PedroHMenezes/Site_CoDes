@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     É NECESSÁRIO E PODE CAUSAR PROBLEMAS DE SINCRONIZAÇÃO.
   */
   db.download('/', function(data) {
-    coDesReplace('.projeto', data)
+    //coDesReplace('.projeto', data)
 
     console.log(value)
   /*
@@ -52,5 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     context = data['portfolio'][value]
     coDesReplace('.container-aluno-text-name', context)
 
+    context = data['portfolio'][value]
+    console.log(context)
+    coDesReplace('.projeto', context)
   })
 })
