@@ -46,9 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
     textos que devem substituir essas ocorrências de {{}}.
   */
     context = data['portfolio'][value]
+    console.log(context)
     coDesReplace('title',context)
 
     context = data['portfolio'][value]
     coDesReplace('.container-aluno-text-name', context)
+
   })
 })
