@@ -24,8 +24,7 @@
 		<div class = "containeraluno-text">
 			<h1 class="container-aluno-text-name">{{categoria}}</h1>
 			<p class="containeraluno-text-description">
-				Nesta página estão disponíveis os projetos de programação!
-				Afinal, Engenharia não é apenas cálculo e nem programação...
+				{{descricao}}
 			</p>
 		</div>
 		<img class="pic1" src="assets/img/python.jpeg" alt="programa python">
@@ -35,7 +34,7 @@
 		{{#each projetos}}
 			<li class="items">
 				<div class="size_img">
-					<img class="pic" src="assets/img/app.jpeg" alt="aplicativo">
+					<img class="pic" src="https://picsum.photos/300/300" alt="{{this.titulo}}">
 				</div>
 				<a href="projeto.html?key={{@key}}">{{this.titulo}}</a>
 			</li>
