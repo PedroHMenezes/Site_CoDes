@@ -53,10 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     coDesReplace('.container-aluno-text-name', context)
 
     context = data['portfolio'][value]
-    console.log(value)
+    coDesReplace('.pic1', context)
+
+    context = data['portfolio'][value]
+    console.log(context)
     coDesReplace('.projeto', context)
 
     context = data['portfolio'][value]
     coDesReplace('.containeraluno-text-description',context)
+
   })
 })

@@ -61,12 +61,17 @@ body{
 	align-items:center;
 }
 
-.pic, .pic1{
+.pic{
 	max-width: 100%;
 	margin: 0rem 0rem 0.5rem 0rem;
 	/*align-self: center;*/
 }
 
+.pic1{
+	max-width: 100%;
+	margin: 0rem 0rem 0.5rem 0rem;
+
+}
 .titulo{
 	height: 1rem;
 	margin: 1rem;

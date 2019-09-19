@@ -39,7 +39,7 @@
 	<ol class="projeto">
 		{{#each portfolio}}
 			<li class="items">
-				<img class="pic" src="https://picsum.photos/300/300" alt={{@key}}>
+				<img class="pic" src="assets/img/{{this.imagem}}" alt={{@key}}>
 				<p><a href="categoria.html?key={{@key}}">{{this.categoria}}</a></p>
 			</li>
 		{{/each}}
