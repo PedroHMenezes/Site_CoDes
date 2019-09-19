@@ -68,7 +68,9 @@ body{
 }
 
 .pic1{
-	max-width: 100%;
+	max-height: 1rem;
+	max-width: 1rem;
+	/*max-width: 100%;*/
 	margin: 0rem 0rem 0.5rem 0rem;
 
 }
